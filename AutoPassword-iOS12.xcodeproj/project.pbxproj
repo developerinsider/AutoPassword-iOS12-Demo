@@ -8,22 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		DBE6678221579B3C0040C808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6678121579B3C0040C808 /* AppDelegate.swift */; };
-		DBE6678421579B3C0040C808 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6678321579B3C0040C808 /* ViewController.swift */; };
 		DBE6678721579B3C0040C808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE6678521579B3C0040C808 /* Main.storyboard */; };
 		DBE6678A21579B3C0040C808 /* AutoPassword_iOS12.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBE6678821579B3C0040C808 /* AutoPassword_iOS12.xcdatamodeld */; };
 		DBE6678C21579B3D0040C808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE6678B21579B3D0040C808 /* Assets.xcassets */; };
 		DBE6678F21579B3D0040C808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE6678D21579B3D0040C808 /* LaunchScreen.storyboard */; };
+		DBE6679921579EFD0040C808 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6679821579EFD0040C808 /* LoginViewController.swift */; };
+		DBE6679B21579F0B0040C808 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6679A21579F0B0040C808 /* OTPViewController.swift */; };
+		DBE6679D21579F210040C808 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6679C21579F210040C808 /* HomeViewController.swift */; };
+		DBE667A02157AC700040C808 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6679F2157AC700040C808 /* ChangePasswordViewController.swift */; };
+		DBE667A22157B1DA0040C808 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE667A12157B1DA0040C808 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBE6677E21579B3C0040C808 /* AutoPassword-iOS12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoPassword-iOS12.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE6678121579B3C0040C808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBE6678321579B3C0040C808 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBE6678621579B3C0040C808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBE6678921579B3C0040C808 /* AutoPassword_iOS12.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AutoPassword_iOS12.xcdatamodel; sourceTree = "<group>"; };
 		DBE6678B21579B3D0040C808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBE6678E21579B3D0040C808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBE6679021579B3D0040C808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBE6679821579EFD0040C808 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DBE6679A21579F0B0040C808 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		DBE6679C21579F210040C808 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DBE6679E2157A2E50040C808 /* AutoPassword-iOS12.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AutoPassword-iOS12.entitlements"; sourceTree = "<group>"; };
+		DBE6679F2157AC700040C808 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		DBE667A12157B1DA0040C808 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +65,13 @@
 		DBE6678021579B3C0040C808 /* AutoPassword-iOS12 */ = {
 			isa = PBXGroup;
 			children = (
+				DBE6679E2157A2E50040C808 /* AutoPassword-iOS12.entitlements */,
 				DBE6678121579B3C0040C808 /* AppDelegate.swift */,
-				DBE6678321579B3C0040C808 /* ViewController.swift */,
+				DBE6679821579EFD0040C808 /* LoginViewController.swift */,
+				DBE667A12157B1DA0040C808 /* SignUpViewController.swift */,
+				DBE6679A21579F0B0040C808 /* OTPViewController.swift */,
+				DBE6679C21579F210040C808 /* HomeViewController.swift */,
+				DBE6679F2157AC700040C808 /* ChangePasswordViewController.swift */,
 				DBE6678521579B3C0040C808 /* Main.storyboard */,
 				DBE6678B21579B3D0040C808 /* Assets.xcassets */,
 				DBE6678D21579B3D0040C808 /* LaunchScreen.storyboard */,
@@ -99,6 +113,11 @@
 				TargetAttributes = {
 					DBE6677D21579B3C0040C808 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE6679D21579F210040C808 /* HomeViewController.swift in Sources */,
+				DBE667A22157B1DA0040C808 /* SignUpViewController.swift in Sources */,
+				DBE6679B21579F0B0040C808 /* OTPViewController.swift in Sources */,
+				DBE6679921579EFD0040C808 /* LoginViewController.swift in Sources */,
+				DBE667A02157AC700040C808 /* ChangePasswordViewController.swift in Sources */,
 				DBE6678A21579B3C0040C808 /* AutoPassword_iOS12.xcdatamodeld in Sources */,
-				DBE6678421579B3C0040C808 /* ViewController.swift in Sources */,
 				DBE6678221579B3C0040C808 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,14 +309,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AutoPassword-iOS12/AutoPassword-iOS12.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2CG2Z45AZQ;
+				DEVELOPMENT_TEAM = 4F7SW76LL6;
 				INFOPLIST_FILE = "AutoPassword-iOS12/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.developerinsider.AutoPassword-iOS12";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.di.AutoPassword-iOS12";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,14 +328,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AutoPassword-iOS12/AutoPassword-iOS12.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2CG2Z45AZQ;
+				DEVELOPMENT_TEAM = 4F7SW76LL6;
 				INFOPLIST_FILE = "AutoPassword-iOS12/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.developerinsider.AutoPassword-iOS12";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.di.AutoPassword-iOS12";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
