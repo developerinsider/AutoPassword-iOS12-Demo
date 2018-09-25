@@ -18,16 +18,13 @@ class LoginViewController: UIViewController {
 
         //Set relevant sign in form elements
         usernameTextField.textContentType = .username
+        usernameTextField.keyboardType = .emailAddress
         passwordTextField.textContentType = .password
-        
-        //Custom password rule for automatic passwords
-        //https://developer.apple.com/password-rules/
-        let passwordRuleDescription = "required: lower; required: upper; required: digit; minlength: 8; maxlength: 16;"
-        let passwordRules = UITextInputPasswordRules(descriptor: passwordRuleDescription)
-        passwordTextField.passwordRules = passwordRules
     }
     
     @IBAction func loginAction(_ sender: UIButton) {
+        UserDefaults.standard.username = usernameTextField.text
+        
         let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
         let otpViewController = mainStoryboard.instantiateViewController(withIdentifier: String(describing: OTPViewController.self))
         navigationController?.pushViewController(otpViewController, animated: true)

@@ -18,7 +18,10 @@ class ChangePasswordViewController: UIViewController {
         super.viewDidLoad()
 
         //username can be readonly here
+        usernameTextField.isEnabled = false
         usernameTextField.textContentType = .username
+        usernameTextField.keyboardType = .emailAddress
+        usernameTextField.text = UserDefaults.standard.username
         
         newPasswordTextField.textContentType = .newPassword
         confirmNewPasswordTextField.textContentType = .newPassword

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB2F8E0B2159565E00269F43 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2F8E0A2159565E00269F43 /* AuthenticationServices.framework */; };
+		DB2F8E0D215961E000269F43 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2F8E0C215961E000269F43 /* UserDefaultExtension.swift */; };
 		DBE6678221579B3C0040C808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE6678121579B3C0040C808 /* AppDelegate.swift */; };
 		DBE6678721579B3C0040C808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE6678521579B3C0040C808 /* Main.storyboard */; };
 		DBE6678A21579B3C0040C808 /* AutoPassword_iOS12.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBE6678821579B3C0040C808 /* AutoPassword_iOS12.xcdatamodeld */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB2F8E0A2159565E00269F43 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		DB2F8E0C215961E000269F43 /* UserDefaultExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
 		DBE6677E21579B3C0040C808 /* AutoPassword-iOS12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoPassword-iOS12.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE6678121579B3C0040C808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBE6678621579B3C0040C808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,17 +44,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB2F8E0B2159565E00269F43 /* AuthenticationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB2F8E092159565E00269F43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB2F8E0A2159565E00269F43 /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DBE6677521579B3C0040C808 = {
 			isa = PBXGroup;
 			children = (
 				DBE6678021579B3C0040C808 /* AutoPassword-iOS12 */,
 				DBE6677F21579B3C0040C808 /* Products */,
+				DB2F8E092159565E00269F43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				DBE6679E2157A2E50040C808 /* AutoPassword-iOS12.entitlements */,
+				DB2F8E0C215961E000269F43 /* UserDefaultExtension.swift */,
 				DBE6678121579B3C0040C808 /* AppDelegate.swift */,
 				DBE6679821579EFD0040C808 /* LoginViewController.swift */,
 				DBE667A12157B1DA0040C808 /* SignUpViewController.swift */,
@@ -114,6 +129,9 @@
 					DBE6677D21579B3C0040C808 = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
+							com.apple.AutoFillCredentialProvider = {
+								enabled = 1;
+							};
 							com.apple.SafariKeychain = {
 								enabled = 1;
 							};
@@ -163,6 +181,7 @@
 				DBE6679921579EFD0040C808 /* LoginViewController.swift in Sources */,
 				DBE667A02157AC700040C808 /* ChangePasswordViewController.swift in Sources */,
 				DBE6678A21579B3C0040C808 /* AutoPassword_iOS12.xcdatamodeld in Sources */,
+				DB2F8E0D215961E000269F43 /* UserDefaultExtension.swift in Sources */,
 				DBE6678221579B3C0040C808 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
